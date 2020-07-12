@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+
+    class BuubleSort
+    {
+         static void Main(string[] args)
+        {
+
+
+            int[] aray = { 1, 4, 5, 2, 8, 7, 6, 3, 9 };
+            var variable = 0;
+            for (var i = 0; i < aray.Length; i++)
+            {
+                for (var j = 0; j < aray.Length; i++)
+                {
+                    if (aray[i] > aray[i + 1])
+                    {
+                        variable = aray[i];
+                        aray[i] = aray[i + 1];
+                        aray[i + 1] = variable;
+                    }
+                }
+            }
+
+            
+
+            Console.WriteLine(aray);
+
+        }
+    }
+
